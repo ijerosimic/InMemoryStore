@@ -25,6 +25,6 @@ func main() {
 	store := &InMemorySessionStore{
 		data: make(map[string]string)}
 	store.Set("session_1", "session_1")
-	handler := &SessionServer{&InMemorySessionStore{}}
+	handler := &SessionServer{store: store}
 	log.Fatal(http.ListenAndServe(":5000", handler))
 }

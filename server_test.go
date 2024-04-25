@@ -50,13 +50,13 @@ func TestSet(t *testing.T) {
 	server := &Server{store}
 
 	t.Run("inserts key value pair into store", func(t *testing.T) {
-		request := newSetRequest("33333")
+		request := newSetRequest("session_3")
 		response := httptest.NewRecorder()
 
 		server.ServeHTTP(response, request)
 
 		got := response.Body.String()
-		want := "33333"
+		want := "session_3"
 
 		assertResponseBody(t, got, want)
 	})
@@ -64,7 +64,7 @@ func TestSet(t *testing.T) {
 
 func newSetRequest(key string) *http.Request {
 	payload := []byte(`{
-    "id": "33333"
+    	"id": "33333"
 	}`)
 	req, _ := http.NewRequest(http.MethodPost, fmt.Sprintf("/sessions/%s", key), bytes.NewBuffer(payload))
 	return req

@@ -41,7 +41,7 @@
     "Go Test.TestGet in igor/inmemorystore.executor": "Debug",
     "Go Test.TestGetSession in igor/inmemorystore.executor": "Debug",
     "Go Test.TestGetSession/returns_store_item_by_key in igor/inmemorystore.executor": "Debug",
-    "Go Test.TestSet/inserts_key_value_pair_into_store in igor/inmemorystore.executor": "Debug",
+    "Go Test.TestSet/inserts_key_value_pair_into_store in igor/inmemorystore.executor": "Run",
     "Go Test.server_test.go.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",

@@ -24,7 +24,11 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	case http.MethodPost:
 		value = s.handlePost(id, r)
 	}
-	fmt.Fprint(w, value)
+	_, err := fmt.Fprint(w, value)
+	if err != nil {
+		fmt.Printf("Error processing http request")
+		return
+	}
 }
 
 func (s *Server) handleGet(id string) string {

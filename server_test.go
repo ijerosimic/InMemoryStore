@@ -2,7 +2,6 @@ package main
 
 import (
 	"bytes"
-	"encoding/json"
 	"fmt"
 	"net/http"
 	"net/http/httptest"
@@ -21,7 +20,7 @@ func TestGet(t *testing.T) {
 	server := &Server{store}
 
 	t.Run("returns store item by key", func(t *testing.T) {
-		request := newGetSessionByIdRequest("session_1")
+		request := newGetRequest("session_1")
 		response := httptest.NewRecorder()
 
 		server.ServeHTTP(response, request)
@@ -32,7 +31,7 @@ func TestGet(t *testing.T) {
 		assertResponseBody(t, got, want)
 	})
 	t.Run("returns store item by different key", func(t *testing.T) {
-		request, _ := http.NewRequest(http.MethodGet, "/sessions/session_2", nil)
+		request := newGetRequest("session_2")
 		response := httptest.NewRecorder()
 
 		server.ServeHTTP(response, request)
@@ -51,25 +50,27 @@ func TestSet(t *testing.T) {
 	server := &Server{store}
 
 	t.Run("inserts key value pair into store", func(t *testing.T) {
-		request := newSetSession("session_3", "33333")
+		request := newSetRequest("33333")
 		response := httptest.NewRecorder()
 
 		server.ServeHTTP(response, request)
 
 		got := response.Body.String()
-		want := "11111"
+		want := "33333"
 
 		assertResponseBody(t, got, want)
 	})
 }
 
-func newSetSession(key string, value string) *http.Request {
-	payload, _ := json.Marshal(value)
+func newSetRequest(key string) *http.Request {
+	payload := []byte(`{
+    "id": "33333"
+	}`)
 	req, _ := http.NewRequest(http.MethodPost, fmt.Sprintf("/sessions/%s", key), bytes.NewBuffer(payload))
 	return req
 }
 
-func newGetSessionByIdRequest(sessionId string) *http.Request {
+func newGetRequest(sessionId string) *http.Request {
 	req, _ := http.NewRequest(http.MethodGet, fmt.Sprintf("/sessions/%s", sessionId), nil)
 	return req
 }
@@ -81,7 +82,6 @@ func assertResponseBody(t testing.TB, got, want string) {
 	}
 }
 
-// server_test.go
 type StubStore struct {
 	mu   sync.RWMutex
 	data map[string]string

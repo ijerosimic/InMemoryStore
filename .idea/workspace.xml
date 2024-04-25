@@ -34,32 +34,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "Go Build.go build igor/inmemorystore.executor": "Debug",
-    "Go Test.TestGet in igor/inmemorystore.executor": "Debug",
-    "Go Test.TestGetSession in igor/inmemorystore.executor": "Debug",
-    "Go Test.TestGetSession/returns_store_item_by_key in igor/inmemorystore.executor": "Debug",
-    "Go Test.TestSet in igor/inmemorystore.executor": "Debug",
-    "Go Test.TestSet/inserts_key_value_pair_into_store in igor/inmemorystore.executor": "Debug",
-    "Go Test.server_test.go.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "configurable..is.expanded": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/igor.jerosimic",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.goide.configuration.GoLibrariesConfigurableProvider"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Build.go build igor/inmemorystore.executor&quot;: &quot;Debug&quot;,
+    &quot;Go Test.TestGet in igor/inmemorystore.executor&quot;: &quot;Debug&quot;,
+    &quot;Go Test.TestGetSession in igor/inmemorystore.executor&quot;: &quot;Debug&quot;,
+    &quot;Go Test.TestGetSession/returns_store_item_by_key in igor/inmemorystore.executor&quot;: &quot;Debug&quot;,
+    &quot;Go Test.TestSet in igor/inmemorystore.executor&quot;: &quot;Debug&quot;,
+    &quot;Go Test.TestSet/inserts_key_value_pair_into_store in igor/inmemorystore.executor&quot;: &quot;Debug&quot;,
+    &quot;Go Test.server_test.go.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;configurable..is.expanded&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/igor.jerosimic&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.goide.configuration.GoLibrariesConfigurableProvider&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Go Test.TestSet/inserts_key_value_pair_into_store in igor/inmemorystore">
     <configuration name="go build igor/inmemorystore" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="InMemoryStore" />
@@ -176,7 +176,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/server.go</url>
-          <line>47</line>
+          <line>44</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>

@@ -31,10 +31,6 @@ func (s *Server) handleGet(id string) string {
 	return s.store.Get(id)
 }
 
-type payload struct {
-	Value string
-}
-
 func (s *Server) handlePost(id string, r *http.Request) string {
 	decoder := json.NewDecoder(r.Body)
 	var payload Payload

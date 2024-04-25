@@ -44,14 +44,6 @@ func (s *Server) handlePost(id string, r *http.Request) string {
 		return ""
 	}
 
-	//scanner := bufio.NewScanner(r.Body)
-	//for i := 0; scanner.Scan() && i < 5; i++ {
-	//	fmt.Println(scanner.Text())
-	//}
-	//if err := scanner.Err(); err != nil {
-	//	panic(err)
-	//}
-
 	s.store.Set(id, payload.Val)
 	return id
 }

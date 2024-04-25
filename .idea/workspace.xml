@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a52a675b-d57f-41d4-a624-1ded2b10015b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/in_memory_store.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inmemorystore" beforeDir="false" afterPath="$PROJECT_DIR$/inmemorystore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessionServer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessionServer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/server_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +30,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2fYm8FpGD3oOo1cZ2kQ2MFxMVlf" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -35,25 +40,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "Go Build.go build igor/inmemorystore.executor": "Debug",
-    "Go Test.TestGetSession in igor/inmemorystore.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/igor.jerosimic",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Build.go build igor/inmemorystore.executor&quot;: &quot;Debug&quot;,
+    &quot;Go Test.TestGetSession in igor/inmemorystore.executor&quot;: &quot;Debug&quot;,
+    &quot;Go Test.TestGetSession/returns_store_item_by_key in igor/inmemorystore.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;configurable..is.expanded&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/igor.jerosimic&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.goide.configuration.GoLibrariesConfigurableProvider&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Go Build.go build igor/inmemorystore">
+}</component>
+  <component name="RunManager" selected="Go Test.TestGetSession/returns_store_item_by_key in igor/inmemorystore">
     <configuration name="go build igor/inmemorystore" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="InMemoryStore" />
       <working_directory value="$PROJECT_DIR$" />
@@ -74,12 +83,25 @@
       <pattern value="^\QTestGetSession\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestGetSession/returns_store_item_by_key in igor/inmemorystore" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="InMemoryStore" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="igor/inmemorystore" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestGetSession\E$/^\Qreturns_store_item_by_key\E$" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build igor/inmemorystore" />
+      <item itemvalue="Go Test.TestGetSession/returns_store_item_by_key in igor/inmemorystore" />
       <item itemvalue="Go Test.TestGetSession in igor/inmemorystore" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestGetSession/returns_store_item_by_key in igor/inmemorystore" />
         <item itemvalue="Go Test.TestGetSession in igor/inmemorystore" />
       </list>
     </recent_temporary>
@@ -103,19 +125,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/main.go</url>
-          <line>27</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/main.go</url>
-          <line>20</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/sessionServer.go</url>
-          <line>11</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/server_test.go</url>
+          <line>29</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

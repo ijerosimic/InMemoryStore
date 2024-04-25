@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"fmt"
+	"log"
 	"net/http"
 	"net/http/httptest"
 	"sync"
@@ -64,9 +65,13 @@ func TestSet(t *testing.T) {
 
 func newSetRequest(key string) *http.Request {
 	payload := []byte(`{
-    	"id": "33333"
+    	"val": "33333"
 	}`)
-	req, _ := http.NewRequest(http.MethodPost, fmt.Sprintf("/sessions/%s", key), bytes.NewBuffer(payload))
+	req, err := http.NewRequest(http.MethodPost, fmt.Sprintf("/sessions/%s", key), bytes.NewBuffer(payload))
+	req.Header.Set("Content-Type", "application/json; charset=UTF-8")
+	if err != nil {
+		log.Fatal(err)
+	}
 	return req
 }
 

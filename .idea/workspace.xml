@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a52a675b-d57f-41d4-a624-1ded2b10015b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/server_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +42,8 @@
     "Go Test.TestGet in igor/inmemorystore.executor": "Debug",
     "Go Test.TestGetSession in igor/inmemorystore.executor": "Debug",
     "Go Test.TestGetSession/returns_store_item_by_key in igor/inmemorystore.executor": "Debug",
-    "Go Test.TestSet/inserts_key_value_pair_into_store in igor/inmemorystore.executor": "Run",
+    "Go Test.TestSet in igor/inmemorystore.executor": "Debug",
+    "Go Test.TestSet/inserts_key_value_pair_into_store in igor/inmemorystore.executor": "Debug",
     "Go Test.server_test.go.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -80,17 +82,6 @@
       <pattern value="^\QTestGet\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGetSession in igor/inmemorystore" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="InMemoryStore" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="igor/inmemorystore" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestGetSession\E$" />
-      <method v="2" />
-    </configuration>
     <configuration name="TestGetSession/returns_store_item_by_key in igor/inmemorystore" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="InMemoryStore" />
       <working_directory value="$PROJECT_DIR$" />
@@ -100,6 +91,17 @@
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <pattern value="^\QTestGetSession\E$/^\Qreturns_store_item_by_key\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSet in igor/inmemorystore" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="InMemoryStore" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="igor/inmemorystore" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestSet\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestSet/inserts_key_value_pair_into_store in igor/inmemorystore" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -125,18 +127,18 @@
     <list>
       <item itemvalue="Go Build.go build igor/inmemorystore" />
       <item itemvalue="Go Test.TestGet in igor/inmemorystore" />
+      <item itemvalue="Go Test.TestSet in igor/inmemorystore" />
       <item itemvalue="Go Test.TestSet/inserts_key_value_pair_into_store in igor/inmemorystore" />
       <item itemvalue="Go Test.server_test.go" />
       <item itemvalue="Go Test.TestGetSession/returns_store_item_by_key in igor/inmemorystore" />
-      <item itemvalue="Go Test.TestGetSession in igor/inmemorystore" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go Test.TestSet/inserts_key_value_pair_into_store in igor/inmemorystore" />
+        <item itemvalue="Go Test.TestSet in igor/inmemorystore" />
         <item itemvalue="Go Test.server_test.go" />
         <item itemvalue="Go Test.TestGet in igor/inmemorystore" />
         <item itemvalue="Go Test.TestGetSession/returns_store_item_by_key in igor/inmemorystore" />
-        <item itemvalue="Go Test.TestGetSession in igor/inmemorystore" />
       </list>
     </recent_temporary>
   </component>
@@ -160,33 +162,33 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/server_test.go</url>
-          <line>28</line>
+          <line>29</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/server.go</url>
-          <line>39</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/server.go</url>
-          <line>41</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/server.go</url>
-          <line>42</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/server_test.go</url>
-          <line>68</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/server_test.go</url>
-          <line>58</line>
+          <line>59</line>
           <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/server_test.go</url>
+          <line>56</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/server.go</url>
+          <line>55</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/server.go</url>
+          <line>48</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/server.go</url>
+          <line>51</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

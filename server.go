@@ -22,7 +22,6 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	case http.MethodGet:
 		value = s.handleGet(id)
 	case http.MethodPost:
-
 		value = s.handlePost(id, r)
 	}
 	fmt.Fprint(w, value)
@@ -38,12 +37,25 @@ type payload struct {
 
 func (s *Server) handlePost(id string, r *http.Request) string {
 	decoder := json.NewDecoder(r.Body)
-	var p payload
-	err := decoder.Decode(&p)
+	var payload Payload
+	err := decoder.Decode(&payload)
 	if err != nil {
 		fmt.Printf("POST - Error decoding json")
 		return ""
 	}
-	s.store.Set(id, p.Value)
+
+	//scanner := bufio.NewScanner(r.Body)
+	//for i := 0; scanner.Scan() && i < 5; i++ {
+	//	fmt.Println(scanner.Text())
+	//}
+	//if err := scanner.Err(); err != nil {
+	//	panic(err)
+	//}
+
+	s.store.Set(id, payload.Val)
 	return id
+}
+
+type Payload struct {
+	Val string `json:"val"`
 }
